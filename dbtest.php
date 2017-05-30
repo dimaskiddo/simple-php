@@ -2,10 +2,10 @@
   $dbhost = getenv("MYSQL_SERVICE_HOST");
   $dbport = getenv("MYSQL_SERVICE_PORT");
   $dbuser = getenv("MYSQL_USER");
-  $dbpwd  = getenv("MYSQL_PASSWORD");
+  $dbpass = getenv("MYSQL_PASSWORD");
   $dbname = getenv("MYSQL_DATABASE");
   
-  $dbconn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+  $dbconn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
   if (!dbconn)
   {
     echo "Error Connetion Database !<br/>\n";
