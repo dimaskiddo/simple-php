@@ -5,8 +5,8 @@
   $dbpass = getenv("MYSQL_PASSWORD");
   $dbname = getenv("MYSQL_DATABASE");
   
-  $dbconn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-  if ($dbconn->connect_errno)
+  $dbconn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+  if (!$dbconn)
   {
     echo "Error Connetion Database !<br/>\n";
   }
