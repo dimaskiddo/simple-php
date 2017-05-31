@@ -5,15 +5,15 @@
   $dbpass = getenv("MYSQL_PASSWORD");
   $dbname = getenv("MYSQL_DATABASE");
   
-  $dbconn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-  if ($dbconn->connect_errno)
-  {
-    echo "Error Connetion Database !<br/>\n";
-  }
-  else
-  {
-    echo "Connection Success !<br/>\n";
-  }
+  // $dbconn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+  // if ($dbconn->connect_errno)
+  // {
+  //   echo "Error Connetion Database !<br/>\n";
+  // }
+  // else
+  // {
+  //   echo "Connection Success !<br/>\n";
+  // }
 
   echo "Environment:<br/>\n";
   echo "- Host: ".$dbhost."<br/>\n";
